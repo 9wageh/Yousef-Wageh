@@ -1,0 +1,1599 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+html {
+    scroll-behavior: smooth;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    font-family: "Montserrat", serif;
+}
+
+body img:hover {
+    opacity: 75%;
+    cursor: pointer;
+}
+
+:root {
+    --primary-color: #BE4D87;
+    --secondary-color: #A5A5A5;
+    --hover-color: #c56295;
+    --background-color: #EDEDED;
+
+}
+
+/* Utilits Code */
+#work {
+    height: 100vh;
+    padding: 35px;
+    background-color: var(--background-color);
+}
+
+#home,
+#skills {
+    height: auto;
+    padding: 35px;
+}
+
+#experience,
+#about {
+    background-color: var(--background-color);
+    height: auto;
+    padding: 35px;
+}
+
+/* Fix for Button Hover */
+#home .container .nav ul li button:hover {
+    cursor: pointer;
+    background-color: var(--hover-color);
+}
+
+/* Headings hover in multiple sections */
+#about h2:hover,
+#skills .container .title h2:hover,
+#experience .container .title h2:hover,
+#work .container .title h2:hover,
+#contact .container .title h2:hover {
+    cursor: pointer;
+    background-color: var(--hover-color);
+}
+
+/* Hover effect for experience and work sections */
+#experience .container .exp:hover,
+#work .container .wo:hover {
+    box-shadow: 0 6px 8px rgba(0, 0, 0, 0.1),
+        0 12px 20px rgba(0, 0, 0, 0.1),
+        0 24px 32px rgba(0, 0, 0, 0.05);
+}
+
+
+/* Work section right content hover fix */
+#work .container .info .wo .content-right a:hover {
+    color: var(--hover-color);
+}
+
+/* Used skills hover */
+#work .container .info .wo .content-right .used-skills h5:hover {
+    background-color: var(--hover-color);
+    cursor: pointer;
+}
+
+/* Nav Start */
+
+#home .container .nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 195px;
+
+}
+
+#home .container .nav img {
+    align-items: center;
+    margin-left: 133px;
+    width: 264.0127px;
+    height: 100.8218px;
+
+}
+
+#home .container .nav ul {
+    display: flex;
+    margin-right: 133px;
+    list-style: none;
+}
+
+#home .container .nav ul li {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+#home .container .nav ul li a {
+    padding: 15px 50px;
+    text-decoration: none;
+    font-size: 18pt;
+    font-weight: 400;
+    color: var(--secondary-color);
+}
+
+#home .container .nav ul li a button {
+    background-color: var(--primary-color);
+    color: white;
+    border: none;
+    border-radius: 42px;
+    font-size: 18pt;
+    font-weight: 600;
+    width: 262px;
+    height: 69.6809px;
+
+}
+
+
+#home .container .nav ul li a:hover {
+    color: var(--hover-color);
+    font-weight: 600;
+    cursor: pointer;
+}
+
+
+
+/* Nav End */
+
+/* Home Start  */
+#home .content .content-left {
+    margin-left: 133px;
+    margin-top: 90px;
+}
+
+#home .content .content-left h1 {
+    font-weight: 700;
+    color: var(--primary-color);
+    font-size: 65pt;
+}
+
+#home .content .content-left p {
+    margin-top: 15px;
+    font-size: 16pt;
+    color: var(--secondary-color);
+    font-weight: 400;
+    line-height: 1.6;
+}
+
+#home .content .content-left .contact-home {
+    margin-top: 45px;
+}
+
+#home .content .content-left .Location {
+    margin-bottom: 10px;
+}
+
+#home .content .content-left .Location {
+    display: flex;
+    align-items: flex-end;
+    gap: 8px;
+
+}
+
+#home .content .content-left .Online {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+
+}
+
+#home .content .content-left .Location img {
+    height: 33.3967px;
+    width: 27.2007px;
+}
+
+.online-img {
+    width: 30px;
+    height: 27px;
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+}
+
+#home .content .content-left .Online img {
+    height: 15px;
+    width: 15px;
+
+}
+
+#home .content .content-left .contact-home .links a img {
+    width: 35px;
+    height: 35px;
+    margin: 45px 15px;
+}
+
+
+#home .content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#home .content .content-right img {
+    width: 431.5831px;
+    height: 490px;
+    margin-right: 133px;
+
+}
+
+/* Home ENd  */
+
+
+/* About me start */
+#about {
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#about h2,
+#skills .container .title h2,
+#work .container .title h2 {
+    background-color: var(--primary-color);
+    color: white;
+    border-radius: 42px;
+    font-size: 20pt;
+    font-weight: 600;
+    width: 180px;
+    height: auto;
+    padding: 20px;
+    text-align: center;
+
+}
+
+#experience .container .title h2 {
+    background-color: var(--primary-color);
+    color: white;
+    border-radius: 42px;
+    font-size: 20pt;
+    font-weight: 600;
+    width: 200px;
+    height: auto;
+    padding: 20px;
+    text-align: center;
+}
+
+
+#about .container {
+    display: flex;
+
+
+}
+
+#about .container .content-left img {
+    width: 431.5831px;
+    height: 490px;
+    margin-left: 103px;
+    margin-top: 200px;
+    margin-right: 230px;
+}
+
+#about .container .content-right {
+    margin-right: 103px;
+}
+
+#about .container .content-right h3 {
+    color: var(--primary-color);
+    font-size: 35pt;
+    font-weight: 700;
+    margin-top: 100px;
+    margin-bottom: 30px;
+}
+
+#about .container .content-right h4 {
+    color: var(--primary-color);
+    font-size: 18pt;
+    font-weight: 600;
+    line-height: 1.6;
+}
+
+#about .container .content-right p,
+#experience .container .exp .content-right .content p {
+    color: var(--secondary-color);
+    font-size: 14pt;
+    font-weight: 600;
+    line-height: 1.6;
+}
+
+/* About me End */
+
+/* Skills Start */
+
+
+#skills .container .title,
+#experience .container .title,
+#work .container .title,
+#contact .container .title {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 22px;
+}
+
+/* Pharagraph Title */
+#skills .container .title p,
+#experience .container .title p,
+#work .container .title p {
+    font-size: 17pt;
+    font-weight: 500;
+    color: var(--secondary-color);
+
+
+}
+
+#skills .container .skills-items {
+    display: flex;
+    justify-content: space-evenly;
+    margin-top: 100px;
+}
+
+#skills .container .skills-items .item {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#skills .container .skills-items .item img {
+    width: 200px;
+    height: 200px;
+
+}
+
+
+#skills .container .skills-items .item p {
+    font-size: 18pt;
+    font-weight: 700;
+
+    padding: 30px;
+}
+
+#skills .container .skills-items .skill-1 p {
+    color: #F2BF22;
+}
+
+#skills .container .skills-items .skill-2 p {
+    color: #0277BD;
+}
+
+#skills .container .skills-items .skill-3 p {
+    color: black;
+}
+
+#skills .container .skills-items .skill-4 p {
+    color: #03A9F4;
+}
+
+#skills .container .skills-items .skill-5 p {
+    color: #FF5722;
+}
+
+#skills .container .skills-items .item p:hover {
+    cursor: pointer;
+}
+
+/* Skills End */
+
+/* experience start */
+
+#experience .container .exp {
+    height: 250px;
+    padding: 20px;
+    background-color: white;
+    border-radius: 42px;
+    margin: 100px 133px;
+    display: flex;
+    position: relative;
+}
+
+#experience .container .exp-1 .content-left img {
+    width: 226px;
+    height: 226px;
+}
+
+
+
+#experience .container .exp .content-right h3 {
+    font-size: 21pt;
+    color: var(--primary-color);
+    font-weight: 700;
+    margin-top: 30px;
+    margin-left: 20px;
+    margin-bottom: 20px;
+
+}
+
+#experience .container .exp .content-right p {
+    margin-left: 20px;
+}
+
+#experience .container .exp .content-right .data {
+    font-size: 18pt;
+    color: var(--primary-color);
+    font-weight: 700;
+    position: absolute;
+    right: 0;
+    top: 0;
+    margin: 35px 50px;
+}
+
+#experience .container .exp-2 .content-left {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#experience .container .exp-2 .content-left img {
+    width: 224.097px;
+    height: 166.28px;
+}
+
+#experience .container .exp {
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1),
+        0 8px 12px rgba(0, 0, 0, 0.1),
+        0 16px 24px rgba(0, 0, 0, 0.05);
+    transition: box-shadow 0.3s ease;
+}
+
+#experience .container .exp:hover,
+#work .container .wo:hover {
+    box-shadow: 0 6px 8px rgba(0, 0, 0, 0.1),
+        0 12px 20px rgba(0, 0, 0, 0.1),
+        0 24px 32px rgba(0, 0, 0, 0.05);
+    border-radius: 42px;
+
+}
+
+/* experience end */
+
+/* Work Start */
+#work .container .title {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+#work .container .info .wo {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 30px;
+    margin-left: auto;
+    margin-right: auto;
+    width: 100%;
+}
+
+/* Change to row layout for content-right */
+#work .container .info .wo .content-right {
+    display: flex;
+    /* Added to enable flexbox */
+    flex-direction: row;
+    /* Change to row */
+    align-items: flex-start;
+    /* Center items vertically */
+    height: 450px;
+    background-color: white;
+    padding: 40px;
+    position: relative;
+    border-radius: 42px;
+}
+
+#work .container .info .wo .content-right img {
+    width: 735px;
+    height: 427px;
+    border-radius: 10px;
+    margin-right: 30px;
+}
+
+#work .container .info .wo .content-right img:hover {
+    opacity: 80%;
+    cursor: pointer;
+}
+
+#work .container .info .wo .content-right a {
+    font-size: 35pt;
+    font-weight: 700;
+    color: var(--primary-color);
+    margin-bottom: 30px;
+    text-decoration: none;
+}
+
+#work .container .info .wo .content-right a:hover {
+    color: var(--secondary-color);
+}
+
+#work .container .info .wo .content-right p {
+    font-size: 15pt;
+    color: var(--secondary-color);
+    font-weight: 600;
+    margin: 10px 20px;
+    /* Add margin for spacing */
+}
+
+#work .container .info .wo .content-right h4 {
+    margin: 5px 20px;
+    /* Add margin for spacing */
+    color: var(--primary-color);
+    font-size: 15pt;
+    font-weight: 700;
+}
+
+#work .container .info .wo .content-right .used-skills {
+    display: flex;
+    align-items: flex-end;
+    justify-content: flex-end;
+    position: absolute;
+    padding-bottom: 50px;
+    right: 20%;
+    bottom: 0;
+}
+
+#work .container .info .wo .content-right .used-skills h5 {
+    padding: 12px;
+    margin: 10px 10px;
+    background-color: var(--secondary-color);
+    border-radius: 42px;
+    color: white;
+    font-weight: 800;
+}
+
+#work .container .info .wo .content-right .used-skills h5:hover {
+    background-color: var(--hover-color);
+    cursor: pointer;
+}
+
+#work .container .so {
+    font-size: 20pt;
+    color: var(--primary-color);
+    font-weight: 600;
+    margin: 70px;
+    text-align: center;
+}
+
+
+/* Work End */
+
+/* Contact Start */
+#contact {
+    height: auto;
+    padding: 35px;
+}
+
+#contact .container .title h2 {
+    background-color: var(--primary-color);
+    color: white;
+    border-radius: 42px;
+    font-size: 20pt;
+    font-weight: 600;
+    width: 250px;
+    height: auto;
+    padding: 20px;
+    text-align: center;
+}
+
+#contact .container .title p {
+    font-size: 18pt;
+    font-weight: 800;
+    color: var(--secondary-color);
+}
+
+#contact .container .title p span {
+    margin-top: 25px;
+    display: block;
+    text-align: center;
+    font-weight: 800;
+}
+
+#contact .container .contact-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+#contact .container .contact-container .contact-item .contact-icon {
+    width: 30px;
+    height: 30px;
+    margin-right: 10px;
+}
+
+#contact .container .contact-container .contact-item .copy-btn {
+    background: none;
+    border: none;
+    padding: 0;
+    margin-left: 10px;
+    cursor: pointer;
+}
+
+#contact .container .contact-container .contact-item .copy-btn img {
+    width: 30px;
+    height: 30px;
+}
+
+#contact .container .contact-container .contact-item span {
+    font-size: 25pt;
+    font-weight: 700;
+    color: var(--secondary-color);
+}
+
+#contact .container .contact-container .it1 {
+    margin-top: 50px;
+    margin-bottom: 25px;
+}
+
+#contact .container .links {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#contact .container .links {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 50px;
+}
+
+#contact .container .links h4 {
+    font-weight: 500;
+    color: var(--secondary-color);
+    text-align: center;
+    margin-bottom: 20px;
+    /* مسافة بين العنوان والصور */
+}
+
+#contact .container .links .images-row {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+#contact .container .links a img {
+    width: 35px;
+    height: 35px;
+    margin: 0 15px;
+}
+
+
+/* Contact End */
+
+/* Dark Mode  start*/
+/* Button styles */
+.theme-toggle {
+    position: fixed;
+    /* Fixed position */
+    bottom: 20px;
+    /* Distance from the bottom */
+    right: 20px;
+    /* Distance from the right */
+    padding: 10px 20px;
+    /* Padding for the button */
+    background-color: var(--primary-color);
+    /* Primary color */
+    color: white;
+    /* Text color */
+    border: none;
+    /* No border */
+    border-radius: 5px;
+    /* Rounded corners */
+    cursor: pointer;
+    /* Pointer cursor */
+    z-index: 1000;
+    /* Ensure it stays above other content */
+    font-size: 16px;
+    /* Font size */
+    transition: background-color 0.3s, color 0.3s;
+    /* Smooth transition */
+    font-weight: 500;
+}
+
+/* Dark mode styles */
+body.dark-mode {
+    background-color: #121212;
+    /* Dark background */
+    color: white;
+    /* Light text color */
+}
+
+body.dark-mode a {
+    color: var(--secondary-color);
+    /* Example link color in dark mode */
+}
+
+/* Change secondary color in dark mode */
+body.dark-mode {
+
+    /* Light gray for secondary text in dark mode */
+    --background-color: #121212;
+}
+
+/* Button styles for dark mode */
+body.dark-mode .theme-toggle {
+    background-color: white;
+    /* Change button background in dark mode */
+    color: var(--primary-color);
+    /* Dark text color for contrast */
+
+}
+
+body.dark-mode #work .container .info .wo .content-right {
+    background-color: #121212;
+}
+
+body.dark-mode #experience .container .exp {
+    background-color: #121212;
+}
+
+/* Add any other styles for dark mode as needed */
+
+/* Dark Mode end */
+
+/* Footer Start*/
+#footer {
+    background: var(--primary-color);
+    text-align: center;
+    color: #fff;
+    padding: 15px 0;
+    font-size: 15px;
+}
+
+#footer a {
+    color: #fff;
+    text-decoration: none;
+}
+
+/* Footer End*/
+
+
+
+
+/* Extra small devices */
+@media (max-width: 767.98px) {
+    body {
+        font-size: 14px;
+    }
+
+    /* Hover Effects */
+
+    /* Image hover effect in body */
+    body img:hover {
+        opacity: 75%;
+        cursor: pointer;
+    }
+
+    /* Button hover effect in navigation */
+    #home .container .nav ul li button:hover {
+        cursor: pointer;
+        background-color: var(--hover-color);
+    }
+
+    /* Headings hover in multiple sections */
+    #about h2:hover,
+    #skills .container .title h2:hover,
+    #experience .container .title h2:hover,
+    #work .container .title h2:hover,
+    #contact .container .title h2:hover {
+        cursor: pointer;
+        background-color: var(--hover-color);
+    }
+
+    /* Hover effect for experience and work sections */
+    #experience .container .exp:hover,
+    #work .container .wo:hover {
+        box-shadow: 0 6px 8px rgba(0, 0, 0, 0.1),
+            0 12px 20px rgba(0, 0, 0, 0.1),
+            0 24px 32px rgba(0, 0, 0, 0.05);
+    }
+
+    /* Work section right content hover fix */
+    #work .container .info .wo .content-right a:hover {
+        color: var(--hover-color);
+    }
+
+    /* Used skills hover */
+    #work .container .info .wo .content-right .used-skills h5:hover {
+        background-color: var(--hover-color);
+        cursor: pointer;
+    }
+
+    /* Hover effect for images in work section */
+    #work .container .info .wo .content-right img:hover {
+        opacity: 80%;
+        cursor: pointer;
+    }
+
+    /* Hover effect for used skills in work section */
+    #work .container .info .wo .content-right .used-skills h5:hover {
+        background-color: var(--hover-color);
+        cursor: pointer;
+    }
+
+    /* Footer link hover effect */
+    #footer a:hover {
+        text-decoration: underline;
+        /* Example hover effect for footer links */
+    }
+
+    /* Hover End */
+    #home .container .nav {
+        display: flex;
+        /* Ensure flexbox is used */
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        /* Center items horizontally */
+    }
+
+    #home .container .nav img {
+        margin: 5px 0;
+        width: 200px;
+        height: 80px;
+    }
+
+    #home .container .nav ul {
+        list-style: none;
+        /* Remove default list styles */
+        padding: 0;
+        /* Remove padding */
+        margin: 0;
+        /* Remove margin */
+        display: flex;
+        /* Use flexbox for the list items */
+        flex-direction: row;
+        /* Stack list items vertically */
+        align-items: center;
+        /* Center list items */
+    }
+
+    #home .container .nav ul li a {
+        font-size: 16px;
+        padding: 15px 10px;
+        text-align: center;
+    }
+
+    #home .container .nav ul li a button {
+        height: 0;
+        width: 0;
+        padding: 0;
+        display: none;
+
+    }
+
+    #home .container,
+    #skills .container {
+        padding: 20px;
+    }
+
+    #home .content .content-left {
+        padding: 0;
+        /* Remove padding */
+        margin: 0;
+        /* Remove margin */
+        display: flex;
+        /* Use flexbox for the list items */
+        flex-direction: column;
+        /* Stack list items vertically */
+        align-items: center;
+        /* Center list items */
+    }
+
+    #home .content .content-left h1 {
+        font-size: 30pt;
+    }
+
+    #home .content .content-left p {
+        font-size: 12pt;
+    }
+
+
+    #home .content .content-right {
+        display: none;
+    }
+
+    #about .container .content-left {
+        display: none;
+    }
+
+    #about .container {
+        padding: 30px;
+    }
+
+    #about .container .content-right {
+        padding: 0;
+        /* Remove padding */
+        margin: 0;
+        /* Remove margin */
+        display: flex;
+        /* Use flexbox for the list items */
+        flex-direction: column;
+        /* Stack list items vertically */
+        align-items: center;
+        /* Center list items */
+    }
+
+    #about .container .content-right h3 {
+        font-size: 20pt;
+    }
+
+    #about .container .content-right P {
+        font-size: 12pt;
+    }
+
+    #skills .container .title p,
+    #experience .container .title p,
+    #work .container .title p {
+        font-size: 13pt;
+    }
+
+    #skills .container .skills-items {
+        padding: 0;
+        /* Remove padding */
+        margin-top: 20px;
+        /* Remove margin */
+        display: flex;
+        /* Use flexbox for the list items */
+        flex-direction: column;
+        /* Stack list items vertically */
+        align-items: center;
+        /* Center list items */
+        flex-wrap: wrap;
+    }
+
+    #skills .container .skills-items .item img {
+        width: 100px;
+        height: 100px;
+
+    }
+
+    #skills .container .skills-items .item p {
+        font-size: 13pt;
+        padding: 15px;
+    }
+
+    #about h2,
+    #skills .container .title h2,
+    #work .container .title h2 {
+        font-size: 15pt;
+        width: 130px;
+    }
+
+    #experience .container .title h2 {
+        width: 150px;
+        font-size: 15pt;
+    }
+
+    #experience .container {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    #experience .container .exp {
+        width: 250px;
+        height: auto;
+        padding: 20px;
+        background-color: white;
+        border-radius: 42px;
+        margin: 100px 133px;
+        display: flex;
+        position: relative;
+    }
+
+    #experience .container .exp-1 .content-left img {
+        width: 100px;
+        height: 100px;
+    }
+
+    #experience .container .exp .content-right h3 {
+        font-size: 15pt;
+        color: var(--primary-color);
+        font-weight: 700;
+        margin-top: 30px;
+        margin-left: 20px;
+        margin-bottom: 20px;
+
+    }
+
+    #experience .container .exp .content-right p {
+        display: none;
+
+    }
+
+    #experience .container .exp .content-right .data {
+        font-size: 15pt;
+        color: var(--primary-color);
+        font-weight: 700;
+        position: absolute;
+        right: 0;
+        top: 0;
+        margin: 35px 50px;
+    }
+
+    #experience .container .exp-2 {
+        margin: 0;
+
+    }
+
+    #experience .container .exp-2 .content-left img {
+        width: 124px;
+        height: 80px;
+    }
+
+
+    #work {
+        height: auto;
+    }
+
+    #work .container .content-right {
+        border-radius: 30px;
+    }
+
+    #work .container .title {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+
+
+
+    #work .container .info .wo .content-right {
+        margin-bottom: 20px;
+        width: 270px;
+        /* Space between image+text and skills */
+    }
+
+
+    #work .container .info .wo .content-right img {
+        width: 100%;
+        /* Make image responsive */
+        height: auto;
+        /* Maintain aspect ratio */
+        border-radius: 10px;
+        margin: 20px 0;
+    }
+
+    #work .container .info .wo .content-right {
+        background-color: white;
+        /* Ensure it stands out */
+        padding: 20px;
+        /* Maintain padding */
+        width: 100%;
+        /* Full width */
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        padding: 50px;
+        margin: 20px;
+        height: auto;
+        width: auto;
+    }
+
+
+    #work .container .info .wo .content-right a {
+        font-size: 12pt;
+        /* Adjust font size for responsiveness */
+        font-weight: 700;
+        color: var(--primary-color);
+        margin-bottom: 30px;
+        /* Adjust margin for smaller screens */
+        text-decoration: none;
+    }
+
+    #work .container .info .wo .content-right p {
+        font-size: 10px;
+        color: var(--secondary-color);
+        font-weight: 600;
+    }
+
+    #work .container .info .wo .content-right h4 {
+        margin: 5px 0;
+        color: var(--primary-color);
+        font-size: 10pt;
+        font-weight: 700;
+    }
+
+    #work .container .info .wo .content-right .used-skills {
+        display: none;
+    }
+
+
+
+    #work .container .so {
+        font-size: 10pt;
+        color: var(--primary-color);
+        font-weight: 600;
+        /* Centered margin */
+        text-align: center;
+        margin-top: 25px;
+    }
+
+    #contact .container .title h2 {
+        width: 140px;
+        font-size: 13pt;
+    }
+
+
+
+    #contact .container .title p {
+        display: block;
+        text-align: center;
+        font-weight: 800;
+        font-size: 14px;
+    }
+
+    #contact .container .contact-container .contact-item .copy-btn {
+        background: none;
+        border: none;
+        padding: 0;
+        margin-left: 2.5px;
+        cursor: pointer;
+    }
+
+    #contact .container .contact-container .contact-item .contact-icon {
+        width: 15px;
+        height: 15px;
+        margin-right: 2.5px;
+    }
+
+    #contact .container .contact-container .contact-item .copy-btn img {
+        width: 15px;
+        height: 15px;
+    }
+
+    #contact .container .contact-container .contact-item span {
+        font-size: 11pt;
+        font-weight: 700;
+        color: var(--secondary-color);
+    }
+
+    #contact .container .contact-container .it1 {
+        margin-top: 30px;
+        margin-bottom: 20px;
+    }
+
+    #contact .container .links h4 {
+        font-size: 9pt;
+        margin-bottom: 12px;
+        /* مسافة بين العنوان والصور */
+    }
+
+    #contact .container .links {
+
+        margin-top: 20px;
+    }
+
+    #contact .container .links a img {
+        width: 20px;
+        height: 20px;
+        margin: 0 8px;
+    }
+
+    /* Button styles */
+    .theme-toggle {
+        position: fixed;
+        /* Fixed position */
+        bottom: 20px;
+        /* Distance from the bottom */
+        right: 20px;
+        /* Distance from the right */
+        padding: 8px 16px;
+
+        font-size: 12px;
+
+    }
+
+    #footer {
+        font-weight: 600;
+        font-size: 8px;
+    }
+
+}
+
+
+
+/* Medium devices */
+@media (min-width: 768px) and (max-width: 1199.98px) {
+    body {
+        font-size: 16px;
+    }
+
+    /* Hover Effects */
+
+    /* Image hover effect in body */
+    body img:hover {
+        opacity: 75%;
+        cursor: pointer;
+    }
+
+    /* Button hover effect in navigation */
+    #home .container .nav ul li button:hover {
+        cursor: pointer;
+        background-color: var(--hover-color);
+    }
+
+    /* Headings hover in multiple sections */
+    #about h2:hover,
+    #skills .container .title h2:hover,
+    #experience .container .title h2:hover,
+    #work .container .title h2:hover,
+    #contact .container .title h2:hover {
+        cursor: pointer;
+        background-color: var(--hover-color);
+    }
+
+    /* Hover effect for experience and work sections */
+    #experience .container .exp:hover,
+    #work .container .wo:hover {
+        box-shadow: 0 6px 8px rgba(0, 0, 0, 0.1),
+            0 12px 20px rgba(0, 0, 0, 0.1),
+            0 24px 32px rgba(0, 0, 0, 0.05);
+    }
+
+    /* Work section right content hover fix */
+    #work .container .info .wo .content-right a:hover {
+        color: var(--hover-color);
+    }
+
+    /* Used skills hover */
+    #work .container .info .wo .content-right .used-skills h5:hover {
+        background-color: var(--hover-color);
+        cursor: pointer;
+    }
+
+    /* Hover effect for images in work section */
+    #work .container .info .wo .content-right img:hover {
+        opacity: 80%;
+        cursor: pointer;
+    }
+
+    /* Hover effect for used skills in work section */
+    #work .container .info .wo .content-right .used-skills h5:hover {
+        background-color: var(--hover-color);
+        cursor: pointer;
+    }
+
+    /* Footer link hover effect */
+    #footer a:hover {
+        text-decoration: underline;
+        /* Example hover effect for footer links */
+    }
+
+    /* Hover End */
+    #home .container .nav {
+        display: flex;
+        /* Ensure flexbox is used */
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        /* Center items horizontally */
+    }
+
+    #home .container .nav img {
+        margin: 5px 0;
+        width: 200px;
+        height: 80px;
+    }
+
+    #home .container .nav ul {
+        list-style: none;
+        /* Remove default list styles */
+        padding: 0;
+        /* Remove padding */
+        margin: 0;
+        /* Remove margin */
+        display: flex;
+        /* Use flexbox for the list items */
+        flex-direction: row;
+        /* Stack list items vertically */
+        align-items: center;
+        /* Center list items */
+    }
+
+    #home .container .nav ul li a {
+        font-size: 20px;
+        padding: 15px 25px;
+        text-align: center;
+    }
+
+    #home .container .nav ul li a button {
+        width: 190px;
+        height: auto;
+        padding: 10px;
+    }
+
+    #home .content .content-left {
+        padding: 0;
+        /* Remove padding */
+        margin: 0;
+        /* Remove margin */
+        display: flex;
+        /* Use flexbox for the list items */
+        flex-direction: column;
+        /* Stack list items vertically */
+        align-items: center;
+        /* Center list items */
+        justify-content: center;
+    }
+
+
+    #home .container .content {
+        margin: 50px;
+    }
+
+    #home .content .content-right img {
+        width: 370px;
+        height: 420px;
+        margin-left: 50px;
+        margin-right: 0;
+    }
+
+    #about .container {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin: 50px;
+    }
+
+    #about .container .content-left img {
+        margin-top: 60px;
+        margin-left: 0;
+        margin-top: 0;
+        margin-right: 0;
+    }
+
+    #about .container .content-right {
+        margin: 0;
+    }
+
+    #skills .container .title p {
+        margin-left: 50px;
+        margin-right: 50px;
+    }
+
+    #skills .container .skills-items {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    #experience .container {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin: 50px;
+    }
+
+    #experience .container .exp {
+        width: 100%;
+        height: auto;
+        padding: 20px;
+        background-color: white;
+        border-radius: 42px;
+        margin: 100px 133px;
+        display: flex;
+        position: relative;
+    }
+
+    #experience .container .exp-1 .content-left img {
+        width: 100px;
+        height: 100px;
+    }
+
+    #experience .container .exp .content-right h3 {
+        font-size: 15pt;
+        color: var(--primary-color);
+        font-weight: 700;
+        margin: 10px;
+
+
+    }
+
+    #experience .container .exp .content-right .content p {
+        font-size: 10px;
+        margin-left: 10px;
+    }
+
+    #experience .container .exp .content-right .data {
+        font-size: 10pt;
+        color: var(--primary-color);
+        font-weight: 700;
+        position: absolute;
+        right: 0;
+        top: 0;
+        margin: 35px 50px;
+    }
+
+    #experience .container .exp-2 {
+        margin: 0;
+
+    }
+
+    #experience .container .exp-2 .content-left img {
+        width: 124px;
+        height: 80px;
+    }
+
+    #work {
+        height: auto;
+
+    }
+
+    #work .container .content-right {
+        border-radius: 30px;
+    }
+
+    #work .container .title {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+
+
+
+    #work .container .info .wo .content-right {
+        margin-bottom: 20px;
+        width: 270px;
+        /* Space between image+text and skills */
+    }
+
+
+    #work .container .info .wo .content-right img {
+        width: 100%;
+        /* Make image responsive */
+        height: auto;
+        /* Maintain aspect ratio */
+        border-radius: 10px;
+        margin: 20px 0;
+    }
+
+    #work .container .info .wo .content-right {
+        background-color: white;
+        /* Ensure it stands out */
+        padding: 20px;
+        /* Maintain padding */
+        width: 57%;
+        /* Full width */
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        padding: 50px;
+        margin: 20px;
+        height: auto;
+
+    }
+
+
+    #work .container .info .wo .content-right a {
+        font-size: 12pt;
+        /* Adjust font size for responsiveness */
+        font-weight: 700;
+        color: var(--primary-color);
+        margin-bottom: 30px;
+        /* Adjust margin for smaller screens */
+        text-decoration: none;
+    }
+
+    #work .container .info .wo .content-right p {
+        font-size: 10px;
+        color: var(--secondary-color);
+        font-weight: 600;
+    }
+
+    #work .container .info .wo .content-right h4 {
+        margin: 5px 0;
+        color: var(--primary-color);
+        font-size: 10pt;
+        font-weight: 700;
+    }
+
+    #work .container .info .wo .content-right .used-skills {
+        display: none;
+    }
+
+
+
+    #work .container .so {
+        font-size: 10pt;
+        color: var(--primary-color);
+        font-weight: 600;
+        /* Centered margin */
+        text-align: center;
+        margin-top: 25px;
+    }
+
+    #contact .container .title h2 {
+        width: 150px;
+        font-size: 13pt;
+    }
+
+    #contact .container .title p {
+        display: block;
+        text-align: center;
+        font-weight: 800;
+        font-size: 16px;
+    }
+
+    #contact .container .contact-container .contact-item .copy-btn {
+        background: none;
+        border: none;
+        padding: 0;
+        margin-left: 8px;
+        cursor: pointer;
+    }
+
+    #contact .container .contact-container .contact-item .contact-icon {
+        width: 20px;
+        height: 20px;
+        margin-right: 8px;
+    }
+
+    #contact .container .contact-container .contact-item .copy-btn img {
+        width: 20px;
+        height: 20px;
+    }
+
+    #contact .container .contact-container .contact-item span {
+        font-size: 15pt;
+        font-weight: 700;
+        color: var(--secondary-color);
+    }
+
+    #contact .container .contact-container .it1 {
+        margin-top: 30px;
+        margin-bottom: 20px;
+    }
+
+    #contact .container .links h4 {
+        font-size: 14pt;
+        margin-bottom: 12px;
+        /* مسافة بين العنوان والصور */
+    }
+
+    #contact .container .links {
+
+        margin-top: 20px;
+    }
+
+    #contact .container .links a img {
+        width: 25px;
+        height: 25px;
+        margin: 0 8px;
+    }
+
+    /* Button styles */
+    .theme-toggle {
+        position: fixed;
+        /* Fixed position */
+        bottom: 20px;
+        /* Distance from the bottom */
+        right: 20px;
+        /* Distance from the right */
+        padding: 8px 16px;
+
+        font-size: 14px;
+
+    }
+
+    #footer {
+        font-weight: 600;
+        font-size: 12px;
+    }
+
+}
